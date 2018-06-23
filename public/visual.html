@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="icon.png"/>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="css/materialize.min.css">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Sugar Fighters</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper cyan darken-4">
+            <a href="index.html" class="brand-logo center">Sugar Fighters</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assistant.html">Assistant</a></li>
+            <li  class="active"><a href="visual.html">Visual Recognition</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="assistant.html">Assistant</a></li>
+        <li  class="active"><a href="visual.html">Visual Recognition</a></li>
+    </ul>
+    <div class="row images_food">
+        <div class="col s12 m7">
+            <div class="row">
+                <div class="col m4 s12" id="1" draggable="true" ondragstart="drag(this, event);"><img class="img-food" src="./img/food/1.jpg" alt="img_food_1"></div>
+                <div class="col m4 s12" id="2" draggable="true" ondragstart="drag(this, event);"><img class="img-food" src="./img/food/2.jpg" alt="img_food_2"></div>
+                <div class="col m4 s12" id="3" draggable="true" ondragstart="drag(this, event);"><img class="img-food" src="./img/food/3.jpg" alt="img_food_3"></div>
+            </div>
+            <div class="row">
+                <div class="col m4 s12" id="4" draggable="true" ondragstart="drag(this, event);"><img class="img-food" src="./img/food/4.jpg" alt="img_food_4"></div>
+                <div class="col m4 s12" id="5" draggable="true" ondragstart="drag(this, event);"><img class="img-food" src="./img/food/5.jpg" alt="img_food_5"></div>
+                <div class="col m4 s12" id="6" draggable="true" ondragstart="drag(this, event);"><img class="img-food" src="./img/food/6.jpg" alt="img_food_6"></div>
+            </div>
+            <div class="hoverable" id="box" ondrop="droped(this, event);" ondragenter="return false" ondragover="return false">
+                <p>Arrastra un imagen para analizar sus carbohidratos</p>
+            </div>
+        </div>
+        <div class="col s12 m5">
+             <div class="content-resp">
+                <div class="response hoverable">
+                <h5 id="cant">Cantidad de Carbohidratos:</h5>
+                    <ul id="results">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/materialize.min.js"></script>
+</body>
+</html>

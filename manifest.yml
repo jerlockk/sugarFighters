@@ -1,0 +1,15 @@
+---
+declared-services:
+  my-watson-assistant-service:
+    label: conversation
+    plan: free
+applications:
+- name: sugar-assistant
+  command: npm start
+  path: .
+  memory: 524M
+  instances: 1
+  services:
+  - Chat_Bot_Salud
+  env:
+    NPM_CONFIG_PRODUCTION: false

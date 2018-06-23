@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-image: url("../img/wall.jpg");
+    background-size: 100% 100%;
+
+    opacity: .6;
+    z-index: -1;
+}
+.brand-logo {
+    margin-left: 15px;
+}
+#video {
+    text-align: center;
+    margin: 4rem 0;
+}
+#slogan {
+    text-align: center;
+    font-size: 1.6em;
+    margin: 30px auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #5c5c5c;
+    text-decoration: underline;
+}
+#doctor {
+    height: 500px;
+    margin-top: 50px;
+}
+.active {
+    background-color: rgba(0,0,0,0.1);
+}
+
+video {
+    width: 700px;
+    height: 600px;
+}
+.micro:hover {
+    cursor: pointer;
+}
+.btn {
+    margin-right: 0.8rem;
+}
+#slider {
+    margin: 5rem 0 0 5rem;
+    height: 65vh !important;
+}
+#slide {
+    height: 60vh !important;
+}
+.img-food {
+    height: 12rem;
+    min-width: 14rem;
+    width: 14rem;
+    margin-top: 4rem;
+    border: 5px outset #9c9c9c;
+}
+.images_food {
+    margin: 3rem 3rem;
+}
+#box {
+    width: 250px;
+    margin: 5rem auto;
+    background-color: #eeeeee;
+    border: 5px dashed grey;
+    text-align: center;
+    color: gray;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+.content-resp {
+    padding: 1rem;
+    margin: 0;
+}
+.content-resp h5{
+    text-align: center;
+    margin: 0 0 15px 0;
+}
+.response {
+    height: 75vh;
+    width: 80%;
+    padding: 1rem;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    border: 4px outset rgba(163, 163, 163, 0.58);
+    background: whitesmoke;
+}
+#results li {
+    line-height: 3rem;
+}
+#cant{
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+    color: #595959;
+}
+@media only screen and (max-width: 1000px) {
+    body {
+        overflow-y: auto;
+    }
+    .m4 {
+        text-align: center;
+    }
+    #slogan {
+        width: 350px;
+    }
+    video {
+        margin-top: 100px;
+        width: 300px;
+        height: 300px;
+    }
+    .brand-logo{
+        min-width: 300px;
+    }
+    #scrollingChat {
+        height: 900px;
+    }
+}
+@media only screen and (max-width: 1250px) {
+
+    #slider {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1400px) {
+
+    .img-food {
+        height: 11rem;
+        min-width: 13rem;
+        width: 13rem;
+        margin-top: 1rem;
+    }
+    .images_food {
+        margin: 1rem 1.5rem;
+    }
+    #box {
+        width: 250px;
+        margin: 2rem auto;
+        padding: 18px;
+        font-size: 1.2rem;
+    }
+    video {
+        width: 600px;
+        height: 500px;
+    }
+}
